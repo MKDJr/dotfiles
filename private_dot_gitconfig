@@ -1,0 +1,21 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Michael Dawson
+	email = michael.k.dawson.jr@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILQZtveaM8snIy5i+XcBEQ3yLPgUOChOtcbWrIlHMtsx
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = /Users/michaeldawson/.gitignore_global
+[pull]
+	rebase = false
