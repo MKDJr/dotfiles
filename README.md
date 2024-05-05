@@ -1,6 +1,6 @@
 # DOTFILES
 
-## Rust CLIs
+## Rust Installs
 
 - cargo-binstall
 - bottom
@@ -9,3 +9,4 @@
 - bat
 - lsd
 - erdtree
+- starship
